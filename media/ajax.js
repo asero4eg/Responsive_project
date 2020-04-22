@@ -12,7 +12,6 @@ function ajaxGet() {
         if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
             var mas = JSON.parse(request.response);
             for (i = 0; i < numerToDisplay; i++) {
-                console.log(mas[counter].title, mas[counter].body, request.response);
 
                 function createBlock(title, body) {
 
